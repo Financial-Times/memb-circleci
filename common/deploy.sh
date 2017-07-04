@@ -24,7 +24,7 @@ kubectl apply -f kubernetes/env/$ENV/ --kubeconfig common/kubeconfig
 kubectl apply -f kubernetes/ --kubeconfig common/kubeconfig
 
 # sets the current image to be used TODO support sidecar containers
-kubectl set image deployment/$SYSTEM_CODE SYSTEM_CODE=$NEW_VERSION --kubeconfig common/kubeconfig
+kubectl set image deployment/$SYSTEM_CODE $SYSTEM_CODE=$NEW_VERSION --kubeconfig common/kubeconfig
 
 # tracks the status of the deployment
 kubectl rollout status deployment/$SYSTEM_CODE --kubeconfig common/kubeconfig
