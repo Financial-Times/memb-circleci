@@ -2,3 +2,5 @@ common/.circle/eu-prod/
 common/.circle/us-prod/
 common/.circle/eu-test/
 common/.circle/us-test/
+
+circle-ci-common.tar.gz
