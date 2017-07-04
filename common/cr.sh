@@ -22,4 +22,4 @@ echo "SYSTEM_CODE=$SYSTEM_CODE"
 echo "ENV=$ENV"
 echo "NEW_VERSION=$NEW_VERSION"
 
-release-log --owner-email "$AUTHOR" --summary "$SYSTEM_CODE version $NEW_VERSION to $ENV" --description "$SUBJECT" --service "$SYSTEM_CODE" --api-key "$CR_API_KEY" --notify-channel membership
+release-log --owner-email "$AUTHOR" --summary "$SYSTEM_CODE version $NEW_VERSION to $ENV" --description "$SUBJECT" --service "$SYSTEM_CODE" --api-key "$CR_API_KEY" --notify-channel memb-alerts --environment Production
