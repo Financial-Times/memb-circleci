@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-cat .npmrc | sed s/NPM_AUTH/$NPM_AUTH/g > .npmrc-new; mv .npmrc-new .npmrc
+cat .npmrc-template | sed s/NPM_AUTH/$NPM_AUTH/g > .npmrc-new; mv .npmrc-new .npmrc
 docker login -e ${NPM_EMAIL} -u ${NPM_USER} -p ${NPM_PASSWORD} nexus.in.ft.com:5000
 npm install -g @financial-times/release-log
 
